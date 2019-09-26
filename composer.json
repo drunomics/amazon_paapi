@@ -1,5 +1,5 @@
 {
-    "name": "drupal/amazon_paapi",
+    "name": "drunomics/amazon_paapi",
     "type": "drupal-module",
     "description": "Drupal helper for using the Amazon Product Advertising API 5 SDK.",
     "license": "GPL-2.0+",
