@@ -10,7 +10,7 @@ who implements them.
 
 Install the module via composer:
 
-    `composer require drunomics/amazon_paapi`
+    composer require drunomics/amazon_paapi
     
 Enable the module as you would a normal drupal module.
 
