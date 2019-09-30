@@ -51,7 +51,6 @@ class SettingsForm extends ConfigFormBase {
       '#required' => TRUE,
       '#default_value' => $access_key,
       '#description' => $description,
-      '#disabled' => AmazonPaapi::isSetInEnv(AmazonPaapi::SETTINGS_ACCESS_KEY),
     ];
 
     $description = $this->t('Enter your Access Key Secret here.');
@@ -64,7 +63,6 @@ class SettingsForm extends ConfigFormBase {
       '#required' => TRUE,
       '#default_value' => $access_secret,
       '#description' => $description,
-      '#disabled' => AmazonPaapi::isSetInEnv(AmazonPaapi::SETTINGS_ACCESS_SECRET),
     ];
 
     $host_url = 'https://webservices.amazon.com/paapi5/documentation/common-request-parameters.html#host-and-region';
@@ -75,7 +73,6 @@ class SettingsForm extends ConfigFormBase {
       '#required' => TRUE,
       '#default_value' => $host,
       '#description' => $this->t('The AWS region of the target locale to which you are sending requests. For more information and valid values refer <a href=":url">Host</a>.', [':url' => $host_url]),
-      '#disabled' => AmazonPaapi::isSetInEnv(AmazonPaapi::SETTINGS_HOST),
     ];
 
     $region_url = 'https://webservices.amazon.com/paapi5/documentation/common-request-parameters.html#host-and-region';
@@ -86,7 +83,6 @@ class SettingsForm extends ConfigFormBase {
       '#required' => TRUE,
       '#default_value' => $region,
       '#description' => $this->t('The AWS region of the target locale to which you are sending requests. For more information and valid values refer <a href=":url">Region</a>.', [':url' => $region_url]),
-      '#disabled' => AmazonPaapi::isSetInEnv(AmazonPaapi::SETTINGS_HOST),
     ];
 
     $form[AmazonPaapi::SETTINGS_PARTNER_TAG] = [
@@ -94,7 +90,6 @@ class SettingsForm extends ConfigFormBase {
       '#title' => $this->t('Partner Tag / Associates ID'),
       '#required' => TRUE,
       '#default_value' => $partner_tag,
-      '#disabled' => AmazonPaapi::isSetInEnv(AmazonPaapi::SETTINGS_PARTNER_TAG),
     ];
 
     foreach (AmazonPaapi::getAvailableSettingsKeys() as $settings_key) {
