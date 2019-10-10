@@ -114,6 +114,7 @@ class TestAsinForm extends FormBase {
       GetItemsResource::IMAGESVARIANTSMEDIUM,
       GetItemsResource::IMAGESVARIANTSLARGE,
       GetItemsResource::ITEM_INFOTITLE,
+      GetItemsResource::ITEM_INFOBY_LINE_INFO,
       GetItemsResource::ITEM_INFOCLASSIFICATIONS,
       GetItemsResource::OFFERSLISTINGSAVAILABILITYMESSAGE,
       GetItemsResource::OFFERSLISTINGSPRICE,
