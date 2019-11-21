@@ -4,7 +4,7 @@ amazon_paapi.settings_form:
     _form: '\Drupal\amazon_paapi\Form\SettingsForm'
     _title: 'Amazon PA API 5.0'
   requirements:
-    _permission: 'administer site configuration'
+    _permission: 'administer amazon paapi'
   options:
     _admin_route: TRUE
 
@@ -14,6 +14,6 @@ amazon_paapi.test_asin_form:
     _title: 'Test ASIN'
     _form: '\Drupal\amazon_paapi\Form\TestAsinForm'
   requirements:
-    _permission: 'administer site configuration'
+    _permission: 'administer amazon paapi'
   options:
     _admin_route: TRUE
