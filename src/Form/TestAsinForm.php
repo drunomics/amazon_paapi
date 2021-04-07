@@ -121,6 +121,8 @@ class TestAsinForm extends FormBase {
       GetItemsResource::OFFERSLISTINGSPROMOTIONS,
       GetItemsResource::OFFERSLISTINGSSAVING_BASIS,
       GetItemsResource::OFFERSLISTINGSDELIVERY_INFOIS_PRIME_ELIGIBLE,
+      GetItemsResource::CUSTOMER_REVIEWSSTAR_RATING,
+      GetItemsResource::CUSTOMER_REVIEWSCOUNT,
     ];
 
     $request = new GetItemsRequest();
