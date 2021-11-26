@@ -1,3 +1,5 @@
+**Deprecated:** moved to https://www.drupal.org/project/amazon_paapi
+
 # Amazon Product Advertising API
 
 Provides a service to load the Amazon PA API SDK 5.0 with credentials that
